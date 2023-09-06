@@ -22,9 +22,16 @@ Container-Orchestrierungssysteme wie Kubernetes haben sich als Industriestandard
 
 Die Thesis beschäftigt sich mit der Forschungsfrage: \glqq Wie kann ein architektonischer Entwurf für eine \cn Plattform aussehen um den neuen Herausforderungen in einer \cn Umgebung zu begegnen\grqq? Hauptaugenmerk liegt im Vergleich zu klassischen Architekturen nicht auf der Hardware Infrastruktur und der Ressourcen Ausstattung wie \ac{CPU}, \ac{RAM} und Speicherplatz, sondern Aspekte im Sinne der Application Observability, die für den reibungslosen Betrieb der Plattform und den darauf ansässigen Anwendungen von Belang sind. Weiterhin betrachtet die Thesis eine eigenständig administrierte, on-Premise betriebene Plattform und keinen Dienstleistungsbezug von einem Service Provider in Form einer \ac{SaaS} oder \ac{PaaS} Lösung.
 
-Das vorrangige Ziel dieser Forschungsarbeit besteht darin, eine eingehende Untersuchung des Themenfelds Application Observability im Kontext von \cn Anwendungen durchzuführen, wobei besonderes Augenmerk auf die Identifizierung und Analyse relevanter Aspekte gelegt wird, die für den effizienten Betrieb von Anwendungen relevant sind. Darüber hinaus beabsichtigt diese Arbeit, die gewonnenen Erkenntnisse und Einsichten in ein umfassendes Architekturmodell zu überführen, das als Leitfaden und Rahmenwerk für die Implementierung und das Management von Application Observability in Cloud Native Umgebungen dienen soll.
+Das vorrangige Ziel dieser Forschungsarbeit besteht darin, eine eingehende Untersuchung des Themenfelds Application Observability im Kontext von \cn Anwendungen durchzuführen, wobei besonderes Augenmerk auf die Identifizierung und Analyse relevanter Aspekte gelegt wird, die für den effizienten Betrieb von Anwendungen relevant sind. Darüber hinaus beabsichtigt diese Arbeit, die gewonnenen Erkenntnisse und Einsichten in ein umfassendes Architekturmodell zu überführen, das als Leitfaden und Rahmenwerk für die Implementierung und das Management von Application Observability in \cn Umgebungen dienen soll.
 
 \subsection{Abgrenzung}
+Aufgrund der Themenvielfalt ist eine Abgrenzung und Fokussierung notwendig. Application Observability in \cn Anwendungen umfasst:
+\begin{itemize}
+\item Monitoring
+\item Tracing
+\item Logging
+\item Telemetriedaten
+\end{itemize}
 Die Festlegung der Abgrenzung der vorliegenden Thesis ist von entscheidender Bedeutung, um den Umfang der Arbeit klar zu definieren und den Fokus gezielt auf die Themenspezifischen Aspekte des architektonischen Entwurfs und der Modellierung einer \cn Plattform für containerisierte Microservices und Anwendungen zu lenken. Durch die klare Definition des Umfangs werden die Grenzen der Untersuchung im weitreichenden \cn Themenkomplex abgesteckt und die Aufmerksamkeit auf die relevanten Themenbereiche gelenkt, die im Kontext dieser Arbeit von Interesse sind.
 \begin{itemize}
 	\item  \textbf{Technologische Ausrichtung:} Die Hausarbeit konzentriert sich auf \cn Technologien und -Ansätze, insbesondere auf die Verwendung von Containern und Microservices. Andere Ansätze, wie beispielsweise virtuelle Maschinen oder herkömmliche monolithische Architekturen, werden nicht im Detail behandelt.
