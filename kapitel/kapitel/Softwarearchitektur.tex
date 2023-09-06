@@ -1,9 +1,49 @@
 \newpage
 \section{Softwarearchitektur}
 \subsection{Begriffsdefinition}
+
+Informationssysteme sind Systeme, die aus menschlichen und maschinellen Teilsystemen bestehen. Diese werden für den Zweck der optimalen Bereitstellung der richtigen Informationen im wirtschaftlichen Kontext eingesetzt \footcite[Vgl.][S.8]{becker2011}. Merkmale von Informationssystemen sind Offenheit, Dynamik und Komplexität. Um solche komplexe Systeme zu steuern werden sogenannte IT-Architekturen entwickelt \footcite[Vgl.][S.11]{becker2011}.
+
+Der Begriff der Architektur beschreibt im traditionellen Sprachgebrauch die grundlegende Gestaltung und Struktur eines Gebäudes, wie beispielsweise die Materialauswahl, Werkzeuge oder Skizzen \footcite[Vgl.][S.16]{schuetz2017}. Analog beschreibt die Architektur von Informationssystemen verschiedene Elemente, wie Dokumentationen und Prozesslandkarten \footcite[Vgl.][S.17]{schuetz2017}.
+
+IT-Architekturen beschreiben modellhaft den grundsätzlichen Aufbau und die Struktur aller Komponenten in einem System, sowie deren Beziehung zueinander \footcite[Vgl.][S.889]{knoll2018}. Aus der Sicht der Implementierung kann die IT-Architektur als eine Struktur informationstechnischer Systeme beschrieben werden \footcite[Vgl.][S.890]{knoll2018}.
+
+
+
 \subsection{Architekturmodelle}
 \subsubsection{3-Tier Architektur}
 \subsubsection{Monolith}
 \subsubsection{Microservices}
+
+
+In einer Microservice-Architektur wird eine Anwendung als eine Reihe kleiner monofunktionaler Module, den Microservices, realisiert. Jeder Microservice führt dabei einen eigenständigen Prozess aus, wobei die Kommunikation über Schnittstellen verläuft \footcite[Vgl.][S.1]{filho2021}. Im Gegensatz zu traditionellen monolithischen Architekturen, in denen verschiedene Module und Subsysteme in einer Anwendung integriert sind und zentral zusammenarbeiten, werden die Microservices unabhängig voneinander entwickelt, bereitgestellt und skaliert \footcite[Vgl.][S.1]{laigner2021}.
+
+Jeder Microservice übernimmt stets eine klar abgegrenzte Aufgabe und hat einen in sich abgeschlossenen Funktionsumfang. So wirken sich Ausfälle nicht direkt auf das Gesamtsystem aus, sondern nur auf den Funktionsumfang des jeweiligen Microservices. Ebenfalls hat jeder Microservice eine eigene Bedieneroberfläche \footcite[Vgl.][S.79]{albrecht2020}. Microservices können verschiedene Technologien, wie zum Beispiel verschiedene Programmiersprachen oder Plattformen nutzen, da der interne Aufbau von der Außenwelt abgeschirmt ist. Ebenfalls besitzt jeder Microservice eine eigene Datenbank \footcite[Vgl.][S.2]{wolff2018}. Die einzelnen Microservices werden in einem Container zusammengefasst oder auf virtuellen Maschinen installiert \footcite[Vgl.][S.79]{albrecht2020}.
+
+Microservices bilden eine abgeschlossene Einheit und bestehen aus einer Datenschicht, einer Funktionsschicht und einer eigenen Präsentationsschicht (Abbildung \ref{fig:mcsaufbau}): In der Datenschicht verwaltet jeder Microservice seine eigene Datenbank. So können für verschiedene Microservices Datenbanken mit unterschiedlichen Technologien genutzt werden. Auch in der Funktionsschicht können je nach Microservice verschiedene Programmiersprachen und Technologien verwendet werden. Die Präsentationsschicht stellt sicher, dass jeder Microservice als abgeschlossene Einheit voll funktionsfähig ist \footcite[Vgl.][S.81 f.]{albrecht2020}.
+
+%\begin{figure}[ht!]
+%\centering
+%\caption{Aufbau von Microservices.}
+%\includegraphics[width=\textwidth]{abbildungen/AufbauMicroservices.eps}
+%\cite[Quelle: In Anlehnung an][S.81 f.]{albrecht2020}
+%\label{fig:mcsaufbau}
+%\end{figure}
+
+Des Öfteren wird mit Microservices das Gesetz von Conway in Zusammenhang gebracht: Es besagt, dass die entwickelte Architektur eine Kopie der Kommunikationsstruktur des Unternehmens darstellt \footcite[Vgl.][S.2]{fowler2015}. Werden Projekte somit streng nach Organisationsaufbau entwickelt, sodass es ein Team für Präsentationsschicht, Funktionsschicht und Datenschicht gibt, entsteht auch ein streng monolithisches Softwaresystem. Demnach ist der Abstimmungsaufwand untereinander vergleichsweise sehr hoch \footcite[Vgl.][S.81]{albrecht2020}. 
+
+Im Unterschied dazu, wird in der Microservice-Architektur ein System nach fachlichen Komponenten aufgeteilt (Abbildung \ref{fig:entwickler})\footcite[Vgl.][S.81 f.]{albrecht2020}. Ein Team entwickelt somit einen Microservice inklusive der Präsentationsschicht, Funktionsschicht und Datenschicht. Daraus resultiert, dass das Entwicklerteam unabhängig ist; Abstimmungen und Kommunikationsbedarf sind innerhalb des kleinen Teams effizienter möglich \footcite[Vgl.][S.41]{wolff2018}. Zwischen Teams verschiedener Microservices besteht ebenfalls nur noch geringer Abstimmungsaufwand \footcite[Vgl.][S.81]{albrecht2020}.
+
+%\begin{figure}[ht!]
+%\centering
+%\caption{Vergleich der Entwicklerteams zwischen einer monolithischen Anwendung und eines Microservices.}
+%\includegraphics[width=\textwidth]{abbildungen/MicroservicesEntwickler.eps}
+%\cite[Quelle: In Anlehnung an][S.82]{albrecht2020}
+%\label{fig:entwickler}
+%\end{figure}
+
+
 \subsection{Container}
+
+
 \subsection{Automation und Orchestration}
