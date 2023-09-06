@@ -5,12 +5,11 @@
 }
 
 @Online{McKinsey2020,
-  author    = {McKinsey},
-  title     = {{COVID-19 digital transformation \& technology | McKinsey}},
-  url       = {https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-covid-19-has-pushed-companies-over-the-technology-tipping-point-and-transformed-business-forever/},
-  urldate   = {2023-08-22},
-  timestamp = {2023-08-22},
-  year      = {2020},
+  author  = {McKinsey},
+  title   = {{COVID-19 digital transformation \& technology | McKinsey}},
+  url     = {https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-covid-19-has-pushed-companies-over-the-technology-tipping-point-and-transformed-business-forever/},
+  urldate = {2023-08-22},
+  year    = {2020},
 }
 
 @Online{statista_cloud_trend_2022,
