@@ -162,13 +162,4 @@
   publisher = {Gabler Verlag},
 }
 
-@Article{knoll2018,
-  author  = {Matthias Knoll},
-  title   = {IT-Architektur},
-  journal = {HMD Praxis der Wirtschaftsinformatik},
-  year    = {2018},
-  volume  = {55},
-  pages   = {889-892},
-}
-
 @Comment{jabref-meta: databaseType:biblatex;}
